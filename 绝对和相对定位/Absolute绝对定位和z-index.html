@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位和Z-index</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        #div1{
+            width: 150px;
+            background: #000;
+            /*绝对定位设置后*/
+            /*如果没有父容器设置相对定位，则以body为基准*/
+            position: absolute;
+
+            /*left属性，在具有相对定位的父容器中，距左侧100像素*/
+            left: 100px;
+
+            /*right属性，在具有相对定位的父容器中，距右侧100像素*/
+            right: 100px;
+
+            /*bottom属性，/*left属性，在具有相对定位的父容器中，距底侧100像素*/
+            bottom: 100px;
+
+            /*top属性，/*left属性，在具有相对定位的父容器中，距顶部100像素*/
+            top: 100px;
+            /*对具备绝对定位的元素，进行层叠排序，z-index值越高,越位于上层*/
+            z-index: 100;
+        }
+
+          #div2{
+
+            background: red;
+            /*绝对定位设置后*/
+            /*如果没有父容器设置相对定位，则以body为基准*/
+            position: absolute;
+
+            /*left属性，在具有相对定位的父容器中，距左侧100像素*/
+            left: 120px;
+
+            /*right属性，在具有相对定位的父容器中，距右侧100像素*/
+            right: 100px;
+
+            /*bottom属性，/*left属性，在具有相对定位的父容器中，距底侧100像素*/
+            bottom: 100px;
+
+            /*top属性，/*left属性，在具有相对定位的父容器中，距顶部100像素*/
+            top: 100px;
+              z-index: 200;
+
+        }
+          #div3{
+
+            background: blue;
+            /*绝对定位设置后*/
+            /*如果没有父容器设置相对定位，则以body为基准*/
+            position: absolute;
+              height: 150px;
+
+            /*left属性，在具有相对定位的父容器中，距左侧100像素*/
+            left: 160px;
+
+            /*right属性，在具有相对定位的父容器中，距右侧100像素*/
+            right: 100px;
+
+            /*bottom属性，/*left属性，在具有相对定位的父容器中，距底侧100像素*/
+            bottom: 100px;
+
+            /*top属性，/*left属性，在具有相对定位的父容器中，距顶部100像素*/
+            top: 100px;
+              z-index: 1;
+        }
+    </style>
+</head>
+<body>
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+</body>
+</html>

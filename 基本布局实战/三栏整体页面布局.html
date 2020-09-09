@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三栏整体页面布局2</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body, div, p, ul, li{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            border: 1px dotted black;
+            text-align: center;
+        }
+        #header {
+            margin: 0 auto;
+            width: 70%;
+            height: 100px;
+            background: peachpuff;
+        }
+        #nav_main{
+            margin: 0 auto;
+            width: 70%;
+           
+            background-color: #333;
+        }
+        #nav_main ul{
+            padding: 0;
+            list-style-type: none;
+            overflow: hidden;
+            width: 32%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(99, 49, 49);
+        }
+        #nav_main li{
+            width: 25%;
+            float: left;
+            
+        }
+        #nav_main li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #nav_main li a:hover {
+            background-color: #111;
+}
+
+        #main{
+            /*居中*/
+            margin: 0 auto;
+
+            border: 1px dotted yellow;
+            width: 70%;
+            height: 60%;
+            /*overflow: hidden;*/
+        }
+
+        /*清除浮动*/
+        .clearfix::before, .clearfix::after{
+	        content: " ";
+	        display:table;
+        }
+        .clearfix:after{
+            clear:both;
+        }
+        .clearfix{
+            zoom:1
+        }
+
+
+        #section_left{
+            width: 20%;
+            height: 100%;
+            float: left;
+            background: coral;
+            
+        }
+        #section_center{
+            width: auto;
+            height: 100%;
+            background: silver;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+          #section_right{
+            width: 20%;
+            height: 100%;
+            background: gold;
+            float: right;
+        }
+        #footer{
+            height:15%;
+            width: 70%;
+            margin: 0 auto;
+            background: antiquewhite;
+            /*清除浮动，即不与浮动数据重叠*/
+            clear: both;
+        }
+    </style>
+</head>
+
+<div id="header">Header</div>
+<div id="nav_main">
+    <ul>
+        <li class="nav"><a href="#">Nav1</a></li>
+        <li class="nav"><a href="#">Nav2</a></li>
+        <li class="nav"><a href="#">Nav3</a></li>
+        <li class="nav"><a href="#">Nav4</a></li>
+    </ul>
+
+</div>
+<div id="main"  class="clearfix">
+    <div id="section_left">Left</div>
+    <div id="section_right">Right</div>
+    <div id="section_center">Center</div>
+
+</div>
+<div id="footer">Footer</div>
+
+</body>
+</html>

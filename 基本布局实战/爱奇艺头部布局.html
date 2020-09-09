@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爱奇艺布局</title>
+    <style>
+        body, div, span, ul, li{
+            padding: 0;
+            margin: 0;
+            font-family: "Microsoft YaHei";
+        }
+        .tn{
+            line-height: 100px;
+            height: 100px;
+            overflow: hidden;
+            background: black;
+            color:gray;
+        }
+        .tn-logo{
+            float: left;
+        }
+        .logo-box{
+            line-height: 50px;
+            width: 200px;
+            margin-left: 100px;
+            font-size: 20px;
+            /*background-color: #4CAF50;*/
+        }
+        .logo-box .iqiyi{
+            color: lawngreen;
+            position: relative;
+            left: 20px;
+            top: 5px;
+        }
+        .logo-box .yuexiang{
+            letter-spacing: 10px;
+            position: relative;
+            bottom: 5px;
+        }
+        .tn-person{
+            float: right;
+            margin-right: 50px;
+            /*background-color: palegoldenrod;*/
+        }
+        .tn-person ul>li{
+            list-style-type: none;
+            float: left;
+            margin: 0 15px;
+        }
+        .tn-person ul>li>a{
+            text-decoration: none;
+            color:gray;
+        }
+         .tn-person ul>li>a:hover{
+            /*text-decoration: none;*/
+            color:lawngreen;
+        }
+         .vipbox{
+             display: none;
+         }
+         .vip:hover .vipbox{
+             height: 120px;
+             width: 180px;
+             position: absolute;
+             display: block;
+             line-height: 40px;
+             margin-left: -60px;
+             text-align: center;
+         }
+         .vipbox li{
+              /*border-radius: 3px;*/
+             padding-left: 0;
+             padding-right: 0;
+             position: relative;
+             right: 30px;
+             width: 180px;
+             background-color: white;
+         }
+         .vipbox li:hover{
+             background-color: wheat;
+         }
+         .tn-person .vipbox li a:hover{
+             color: goldenrod;
+         }
+        .tn-search{
+            width: 700px;
+            margin: 0 auto;
+            /*background-color: red;*/
+        }
+        .tn-search .form{
+            width: 550px;
+            margin: 0 auto;
+        }
+        .form .search-box{
+            border: none;
+            position: relative;
+            left: 4px;
+            bottom: 1px;
+            width: 350px;
+            height: 50px;
+            background-color: white;
+            position:relative; /* 这里规定输入框的定位类型 */
+            right:100px; /* 这里规定输入框于原位置向右偏移300px */
+            font-family: "Microsoft YaHei";
+            font-size: 19px;
+        }
+        .form .btn{
+            height: 53px;
+            width: 100px;
+            background-color: green;
+            color: white;
+            font-family: "Microsoft YaHei";
+            font-size: 21px;
+            border: none;
+        }
+          .form .btn:hover{
+            background-color: lawngreen;
+        }
+
+        .header{
+            height: 300px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<div class="tn">
+
+    <div class="tn-logo">
+        <div class="logo-box">
+            <div class="iqiyi">爱奇艺</div>
+            <div class="yuexiang">悦享品质</div>
+        </div>
+    </div>
+
+    <div class="tn-person">
+        <ul>
+            <li class="vip">
+                <a href="#">VIP</a>
+                <ul class="vipbox">
+                    <li><a href="#">了解VIP特权</a></li>
+                    <li><a href="#">做任务领取奖励</a></li>
+                    <li><a href="#">购买VIP会员</a></li>
+                </ul>
+            </li>
+            <li><a href="#">上传</a></li>
+            <li><a href="#">消息</a></li>
+            <li><a href="#">客户端</a></li>
+            <li><a href="#">看过</a></li>
+        </ul>
+    </div>
+
+      <div class="tn-search">
+        <div class="form">
+        <input class="search-box" type="text" placeholder="奔跑吧兄弟">
+        <input class="btn" type="button" value="搜全网">
+        </div>
+    </div>
+</div>
+<div class="header"></div>
+
+
+</body>
+</html>

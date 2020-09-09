@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高度坍塌</title>
+    <style>
+        .div1{
+            background: coral;
+            /*这能解决高度坍塌的问题，使div1对浮动元素具有包裹性*/
+            overflow: hidden;
+        }
+        .div2{
+            background: blue;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 50px;
+            /*使 clcass div2 层脱离文档流，导致其父级标签层失去了高度*/
+            /*形成高度坍塌*/
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <div class="div2"></div>
+    <div class="div2"></div>
+
+</div>
+</body>
+</html>

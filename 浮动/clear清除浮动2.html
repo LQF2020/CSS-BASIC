@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clear清除浮动2</title>
+    <style>
+         div{
+            border: 1px dashed blue;
+        }
+        .fl{
+            background: coral;
+            height: 100px;
+            width: 100px;
+            float: left;
+            /*清除浮动，使元素顺移到浮动元素的下层位置；both为清除左右浮动*/
+            /*clear: both;*/
+        }
+         .fr{
+        background: coral;
+        height: 200px;
+        width: 100px;
+        float: right;
+
+       }
+        .footer{
+            /*clear: right;*/
+            /*清除浮动，使元素顺移到浮动元素的下层位置；both为清除左右浮动*/
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="fl">fl</div>
+<div class="fr">fr</div>
+<div class="footer">Bottom</div>
+
+
+</body>
+</html>

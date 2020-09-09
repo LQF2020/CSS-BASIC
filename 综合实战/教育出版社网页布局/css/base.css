@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*一般来说，所有页面的根样式都会写在这里*/
+/*样式重置，这是由于不同浏览器的默认样式不一样*/
+
+.triangle-down{
+    border: 5px solid #666666;
+    border-style: solid dashed dashed;
+    border-color: #666 transparent transparent;
+    width: 0;
+    height: 0;
+}
+
+.clearfix::before, .clearfix::after{
+	contet: " ";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+}
+.clearfix{
+	zoom:1
+  }

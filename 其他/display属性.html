@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display属性</title>
+    <style>
+
+        /*隐藏内容*/
+        #iP{
+            display: none;
+        }
+        /*可以使行内标签，如span进行换行*/
+        .newLine{
+            display: block;
+        }
+        .newLine:hover{
+            background-color: blue;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            var btn = document.getElementById("toggle");
+            var to_display = document.getElementById("iP");
+            btn.onclick = function(){
+                if(to_display.style.display == "block"){
+                    to_display.style.display = "none";
+                }else{
+                    to_display.style.display = "block";
+                }
+                
+            }
+        }
+    </script>
+</head>
+<body>
+<p id="iP">assdfgsdawdadadadawdaassdfgsdawdadadadawdaassdfgsdawdadadadawda</p>
+
+<span id="toggle" class="newLine">span1</span>
+<span class="newLine">span2</span>
+<span class="newLine">span3</span>
+
+</body>
+</html>

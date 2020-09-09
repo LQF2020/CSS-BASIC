@@ -1,0 +1,401 @@
+@charset "UTF-8";
+/*==> S 布局的CSS代码*/
+body{
+    color: #666666;
+    font-size: 12px;
+}
+a{
+    color: #666666;
+}
+
+/*用户顶部导航区域开始*/
+.h-header{
+}
+.h-header .top-nav{
+    margin: 0 auto;
+    width: 1190px;
+    /*使文字居中对齐*/
+    height:74px;
+    padding-top: 24px;
+    /*line-height: 98px;*/
+    /*border: 1px solid black;*/
+}
+
+.h-header .top-nav .logo{
+    float: left;
+    /*元素设置浮动后具备包裹性，可以不设置宽高*/
+}
+.h-header .top-nav .logo h1{
+    position: absolute;
+   text-indent: -9999px;
+}
+.h-header .top-nav .logo img{
+    position: absolute;
+    width: 264px;
+    height: 60px;
+}
+.h-header .top-nav .user-nav{
+    padding: 5px;
+    float: right;
+    /*background-color: antiquewhite;*/
+}
+.h-header .top-nav .user-nav > ul > li{
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 11px 0 14px;
+}
+
+.msg-wrap{
+    position: relative;
+    left: 5px;
+    bottom: 3px;
+
+}
+.msg-wrap img{
+    width: 50px;
+    height: 32px;
+    border-radius: 50%;
+}
+.msg-wrap .msg-num{
+    font-weight: bold;
+    position: relative;
+    bottom: 3px;
+    right: 17px;
+    color: red;
+    font-size: 20px;
+}
+.user-nav .user-img{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+.user-nav .user-img:hover{
+    border: 3px solid deepskyblue;
+}
+.user-nav .user-name i.icon, .user-nav .teacher i.icon{
+    display: inline-block;
+    /*float: right;*/
+}
+ .user-nav .user-wrap{
+    position: relative;
+}
+.user-nav .user-box{
+    display: none;
+}
+.user-wrap:hover .user-box{
+    z-index: 200;
+    position: absolute;
+    left: 0px;
+    top: 43px;
+    display: block;
+}
+.user-nav .user-box li{
+    border: 1px solid black;
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: white;
+}
+.user-nav .user-box li:hover{
+    background-color: gainsboro;
+}
+.h-header .top-nav .search{
+    /*上右下左边距*/
+    margin: 0 265px 0 357px;
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+
+.search{
+    line-height: 30px;
+}
+.search .course-select{
+    display: inline-block;
+    width: 66px;
+    height: 30px;
+    border: 1px solid #666666;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+
+.search .course-select i.triangle-p{
+    float: right;
+    margin-top: 13px;
+    margin-right: 6px;
+}
+.course-select .menu-box{
+    display: none;
+
+}
+.course-select:hover .menu-box{
+    z-index: 200;
+    display: block;
+    position: absolute;
+    margin-left: -1px;
+}
+.course-select .menu-box li{
+    width: 66px;
+    height: 30px;
+    border: 1px solid #666666;
+    text-align: center;
+    background-color: white;
+}
+.course-select .menu-box li:hover{
+    background-color: gainsboro;
+}
+
+.top-nav .search input{
+    float: left;
+    display: inline-block;
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    /*使文字输入距离文本框1边距*/
+    padding-left: 1em;
+    border: 1px solid black;
+}
+
+.top-nav .search .icon-search{
+    border: 1px solid black;
+    border-right: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url("../img/search.png") no-repeat;
+    position: absolute;
+    left: 449px;
+
+}
+
+.h-header .site-nav-wrap{
+    margin: 0 auto;
+    width: 1190px;
+    height: 60px;
+}
+/*用户顶部导航区域结束*/
+
+
+
+/*页面主导航区域开始*/
+.site-nav{
+    background-color: #3598db;
+    height: 60px;
+    line-height: 60px;
+}
+
+.site-nav li, .site-nav a{
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.site-nav-wrap .main-nav .main-nav-list{
+    float: left;
+}
+.main-nav .main-nav-list > li{
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.main-nav .main-nav-list > li > a{
+    display: inline-block;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    margin: auto 0;
+    padding: 0 22px;
+    border-radius: 6px;
+}
+
+#nobgc:hover{
+    background-color: #3598db;
+}
+.main-nav .main-nav-list > li > a:hover{
+    background-color: #2db0f9;
+}
+.site-nav-wrap .nav-aside .nav-aside-list{
+    background-color: coral;
+    float: right;
+    padding-left: 20px;
+}
+.nav-aside .nav-aside-list > li{
+    padding-left: 20px;
+    float:left;
+}
+.nav-aside .nav-aside-list > li>a:hover{
+    color: gold;
+}
+.site-nav .color-fillup{
+    position: relative;
+    margin-left: 1190px;
+}
+
+.site-nav .color-fillup .color-fillup-halfbox{
+    height: 60px;
+    position: absolute;
+    width: 50%;
+    background-color: coral;
+    right: 0;
+    top: -60px;
+}
+/*页面主导航区域结束*/
+
+
+
+
+/*页面banner区域开始*/
+.h-banner{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border: 1px solid black;
+    z-index: 100;
+}
+.h-banner .h-banner-slide{
+
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    margin-top: 210px;
+}
+.h-banner-slide .slide-box > ul > li{
+    display: inline-block;
+    float: left;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    margin-right: 15px;
+}
+.h-banner-slide .slide-box > ul > li:hover{
+
+    background-color: #ff8e1e;
+
+}
+.h-banner .banner-img{
+    width: 100%;
+    height: 100%;
+    background-color: #2db0f9;
+}
+/*页面banner区域结束*/
+
+
+/*main课程列表区域开始*/
+.h-main{
+    width: 1190px;
+    margin: 0 auto;
+}
+.h-main .course-list{
+    /*border: 1px solid black;*/
+}
+
+.h-main .course-list .p-module-head{
+     padding-top: 40px;
+    height: 22px;
+    line-height: 22px;
+    color: #1a1a1a;
+}
+.p-module-head .p-module-title{
+    float: left;
+    padding-left: 18px;
+    font-size: 22px;
+    border-left: 7px solid #2db0f9;
+}
+
+.p-module-head .p-module-more{
+    display: inline-block;
+    font-size: 17px;
+    float: right;
+    color: #5da7df;
+    position: relative;
+    right: 50px;
+}
+.p-module-head .p-module-more:hover{
+    color: orange;
+}
+
+.h-main .course-list .p-module-body{
+    height: 460px;
+    padding-top: 30px;
+    /*border: 1px solid black;*/
+    margin-left: 14px;
+    margin-right: 14px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #1a1a1a;
+}
+
+.h-main .course-list .p-module-body .p-module-course-list > li{
+    margin-right: 25px;
+    height: 225px;
+    /*border: 1px solid black;*/
+    float: left;
+    text-align: center;
+}
+
+.p-module-course-list > li > .p-name a:hover{
+    color: #2db0f9;
+}
+.p-module-course-list > li > .p-img{
+    background-color: #ff8e1e;
+    width: 200px;
+    height: 180px;
+    border: 1px solid black;
+}
+
+.h-main .book-list{
+    /*border: 1px solid gold;*/
+}
+.h-main .book-list .p-module-head{
+    padding-top: 40px;
+    height: 22px;
+    line-height: 22px;
+    color: #1a1a1a;
+}
+
+.h-main .book-list .p-module-body{
+    overflow: hidden;
+    padding-top: 30px;
+    /*border: 1px solid black;*/
+    margin-left: 14px;
+    margin-right: 14px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #1a1a1a;
+}
+.h-main .book-list .p-module-body .p-module-book-list > li{
+    margin-right: 25px;
+    height: 225px;
+    /*border: 1px solid black;*/
+    float: left;
+    text-align: center;
+}
+.p-module-book-list > li > .p-img{
+    background-color: goldenrod;
+    width: 200px;
+    height: 180px;
+    border: 1px solid black;
+}
+.p-module-book-list > li > .p-name a:hover{
+    color: #2db0f9;
+}
+
+.h-footer{
+    margin: 0 auto;
+    height: 100px;
+    background-color: gray;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 17px;
+    color: white;
+}
+
+/*main课程列表区域结束*/
+
+
+/*==> E 布局的CSS代码*/

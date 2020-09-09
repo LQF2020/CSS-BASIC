@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clear清除浮动1</title>
+    <style>
+        .div1{
+            background: coral;
+            height: 100px;
+            width: auto;
+            margin-bottom: 10px;
+            /*清除浮动，使元素顺移到浮动元素的下层位置；both为清除左右浮动*/
+            /*clear: both;*/
+        }
+        .div2{
+            background: blue;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 50px;
+            /*使 clcass div2 层脱离文档流，导致其父级标签层失去了高度*/
+            /*形成高度坍塌*/
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div1"></div>
+
+
+</body>
+</html>

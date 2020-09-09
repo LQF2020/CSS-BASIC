@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新浪综合应用布局</title>
+    <style>
+        body, div, ul, li{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            font: 12px/20px "Microsoft YaHei" ;
+        }
+
+        ul, li{
+            list-style-type: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: #4c4c4c;
+        }
+        .tn{
+            height: 42px;
+            line-height: 42px;
+            border-top: 4px solid #ff8500;
+            border-bottom: 1px solid #edeef0;
+
+        }
+        .tn-main{
+            margin: 0 auto;
+            width: 960px;
+            overflow: hidden;
+        }
+        
+        .tn-main .tn-nav{
+            float: left;
+        }
+
+        .tn-main .tn-nav > li{
+            padding: 0px 15px;
+            float: left;
+        }
+
+
+          .tn-nav > li:hover{
+             /*background-color: #edeef0;*/
+        }
+          .tn-nav > li a:hover{
+             color: #ff8500;
+        }
+
+        .yidong_box{
+              display: none;
+        }
+
+        .yidong:hover .yidong_box{
+            display: block;
+            position: absolute;
+            background-color: white;
+            margin-left: -3px;
+            width: 65px;
+        }
+
+        .yidong_box li {
+            border: 1px solid #ff8500;
+            border-top: none;
+            text-align: center;
+
+        }
+          .yidong_box li:hover {
+             background-color: palegoldenrod;
+        }
+        .tn-main .tn-person{
+            float: right;
+        }
+
+        .tn-main .tn-person> li{
+            float: left;
+            padding: 0px 15px;
+        }
+
+        .tn-main .tn-person> li:hover {
+             background-color: #edeef0;
+        }
+
+        .tn-main .tn-person>li a:hover{
+             color: #ff8500;
+        }
+
+        .weibo_box{
+            display: none;
+        }
+        .weibo:hover .weibo_box{
+            display: block;
+            position: absolute;
+            background-color: white;
+            margin-left: -13px;
+
+        }
+        .weibo_box li{
+            border: 1px solid #ff8500;
+            width: 50px;
+            height: 31px;
+            text-align: center;
+            line-height: 31px;
+            border-top: none;
+
+
+        }
+
+         .weibo_box li:hover {
+             background-color: palegoldenrod;
+        }
+
+        .header{
+            height: 100px;
+            background-color: aqua;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="tn">
+    <div class="tn-main">
+        <ul class="tn-nav">
+            <li><a href="#">新浪首页</a> </li>
+            <li><a href="#">手机新浪网</a> </li>
+            <li class="yidong">
+                <a href="#">移动客户端</a>
+                <ul class="yidong_box">
+                    <li><a href="#">新浪博客</a></li>
+                    <li><a href="#">新浪新闻</a></li>
+                    <li><a href="#">新浪财经</a></li>
+                    <li><a href="#">新浪体育</a></li>
+                    <li><a href="#">新浪娱乐</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="tn-person">
+            <li><a href="#">登陆</a> </li>
+            <li class="weibo">
+                <a href="#">微博</a>
+                <ul class="weibo_box">
+                    <li><a href="#">私信</a></li>
+                    <li><a href="#">评论</a></li>
+                    <li><a href="#">@我</a></li>
+                </ul>
+
+            </li>
+            <li><a href="#">博客</a> </li>
+            <li><a href="#">邮箱</a> </li>
+            <li><a href="#">网站导航</a> </li>
+
+        </ul>
+    </div>
+</div>
+<div class="header"></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>relative相对定位</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: #000;
+            /*相对定位设置后，就可以设置css中left，right，bottom，top等属性*/
+            position: relative;
+
+            /*left属性，即相对原来标准文档流位置，右移100像素*/
+            left: 100px;
+
+            /*right属性，即相对原来标准文档流位置，左移100像素*/
+            right: 100px;
+
+            /*bottom属性，即相对原来标准文档流位置，上移移100像素*/
+            bottom: 100px;
+
+            /*top属性，即相对原来标准文档流位置，下移100像素*/
+            top: 100px;
+
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

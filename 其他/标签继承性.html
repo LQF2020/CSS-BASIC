@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签继承性</title>
+    <style>
+        p{
+            font-size: 30px;
+            color: green;
+        }
+        p span.c{
+            font-size: 40px;
+            color: #000;
+        }
+
+        /*a标签颜色必须定义继承才能继承父级*/
+        a{
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+<p><span>子类标签</span>会继承父类标签的特性<a href="#">我是连接</a> </p>
+<p><span class="c">子类标签</span>会继承父类标签的特性</p>
+
+</body>
+</html>
